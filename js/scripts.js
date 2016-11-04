@@ -6,6 +6,7 @@ function Pizza(size) {
 
 
 $(document).ready(function() {
-  $("#nav-list").fadeIn(1500)
+  $("#nav-list").fadeIn(1500);
   $(".row").fadeIn(1500);
+  
 });

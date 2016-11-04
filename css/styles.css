@@ -1,17 +1,24 @@
 body {
-  background: url("../img/row1.jpeg") fixed;
-  background-size: cover;
   color: #000000;
 }
 
-#header-container {
+h1 {
+  padding: 2%;
+}
+
+.container {
   padding: 0px;
   width: 100%;
 }
 
+#header-container {
+  background: url("../img/row1.jpeg") no-repeat fixed;
+  background-size: cover;
+}
+
 #main-container {
-  padding: 0px;
-  width: 100%;
+  background: url("../img/container2-bg.jpg") no-repeat fixed;
+  background-size: cover;
 }
 
 .row {
@@ -41,10 +48,16 @@ body {
   font-weight: bolder;
 }
 
-.nav > li > a:hover {
+.nav > li:hover {
   cursor: pointer;
   background-color: #1fc4ab;
   color: #ffffff;
+}
+
+.row > h1 {
+  font-size: 3em;
+  width: 100%;
+  padding: 5px;
 }
 
 #navbar-name {
@@ -62,36 +75,97 @@ body {
   background-color: #1fc4ab;
 }
 
-ul > .menu-buttons {
+ul > .nav-buttons {
   float: right;
-}
-
-#deals-button {
-  margin-right: 5px;
 }
 
 #row-1 {
   background-color: transparent;
 }
 
-h1 {
-  font-size: 3em;
-  background-color: #1fc4ab;
-  width: 100%;
-  padding: 5px;
+#row1-column > h1 {
+  background-color: #000000;
+  color: #1fc4ab;
+  padding: 2%;
+}
+
+#row1-column > h1:hover {
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 #row-2 {
   background-color: #000000;
+  color: #1fc4ab;
+  padding-top: 15vh;
 }
 
-#row-1 > a {
+#row2-column > h1 {
+  background-color: #1fc4ab;
   color: #000000;
-  text-decoration: none;
 }
 
-#row-1 > a:hover {
+#row2-column > #row2-order {
+  background-color: #000000;
+  color: #1fc4ab;
+  border: 2px #1fc4ab solid;
+}
+
+#row2-column > #row2-order:hover {
   cursor: pointer;
   color: #ffffff;
   text-decoration: none;
+}
+
+#row-3 {
+  background-color: transparent;
+}
+
+#row3-h1 > h1 {
+  background-color: #000000;
+  color: #1fc4ab;
+  padding: 2%;
+}
+
+#row3-h1 > .order-button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#order-row {
+  background-color: #000000;
+  color: #1fc4ab;
+  padding-top: 15vh;
+}
+
+#order-row-column > h1 {
+  background-color: #1fc4ab;
+  color: #000000;
+}
+
+#order-form {
+  text-align: left;
+}
+
+#order-form > ul, #order-form > h1 {
+  padding: 0;
+}
+
+#order-submit {
+  background-color: #000000;
+  color: #1fc4ab;
+  width: 100%;
+  border: 2px #1fc4ab solid;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+#order-submit:hover {
+  background-color: #1fc4ab;
+  color: #000000;
+  width: 100%;
+  border-radius: 0;
+  border: none;
 }

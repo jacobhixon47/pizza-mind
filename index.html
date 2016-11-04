@@ -15,19 +15,16 @@
         <nav class="navbar navbar-right navbar-fixed-top">
           <ul class="nav nav-pills" id="nav-list">
             <li id="navbar-name" role="presentation"><a href="index.html">PIZZAMIND</a></li>
-            <li class="menu-buttons" role="presentation"><a href="#" id="deals-button">Deals</a></li>
-            <li class="menu-buttons" role="presentation"><a href="#">Menu</a></li>
-            <li class="menu-buttons" role="presentation"><a href="#">Order</a></li>
+            <li class="nav-buttons menu-button" role="presentation"><a href="#" id="deals-button">Deals</a></li>
+            <li class="nav-buttons menu-button" role="presentation"><a href="#">Menu</a></li>
+            <li class="nav-buttons order-button" role="presentation"><a href="#">Order</a></li>
           </ul>
         </nav>
 
         <div class="row" id="row-1">
-          <a href="#">
-            <div class="col-md-12" id="col-1">
-              <h1>Quench Your Hunger</h1>
-              <h1><i class="fa fa-chevron-down"></i></h1>
-            </div>
-          </a>
+          <div class="col-md-12" id="row1-column">
+            <h1 class="order-button">Quench Your Hunger</h1>
+          </div>
         </div>
 
       </div> <!-- container-fluid -->
@@ -35,10 +32,57 @@
     <div class="container" id="main-container">
 
       <div class="row" id="row-2">
-        <div class="col-md-12">
-          <h1>Quench Your Hunger</h1>
-          <h1><i class="fa fa-chevron-down"></i></h1>
+        <div class="col-md-12" id="row2-column">
+          <h1>Skip the wait</h1>
+          <h1>Skip the login</h1>
+          <h1>Acquire munch</h1>
+          <h1 class="order-button" id="row2-order">Order Now</h1>
         </div>
+      </div>
+      <div class="row" id="row-3">
+        <div class="col-md-12">
+          <div id="row3-h1">
+            <h1>New Boneless Wings</h1>
+            <h1 class="order-button">Order Now</h1>
+          </div>
+        </div>
+      </div>
+      <!-- Order Page-->
+      <div class="row" id="order-row">
+        <div class="col-md-12" id="order-row-column">
+          <h1>Order Selection</h1>
+          <form id="order-form">
+            <h1>Size</h1>
+            <ul>
+              <input type="radio" value="small">
+              <label>Small</label><br>
+              <input type="radio" value="medium">
+              <label>Medium</label><br>
+              <input type="radio" value="large">
+              <label>Large</label><br>
+            </ul>
+            <h1>Toppings</h1>
+            <ul>
+              <input type="checkbox" value="1">
+              <label>Pepperoni</label><br>
+              <input type="checkbox" value="1">
+              <label>Ham</label><br>
+              <input type="checkbox" value="1">
+              <label>Olives</label><br>
+              <input type="checkbox" value="1">
+              <label>Chicken</label><br>
+              <input type="checkbox" value="1">
+              <label>Peppers</label><br>
+              <input type="checkbox" value="1">
+              <label>Tomatoes</label><br>
+            </ul>
+
+            <button type="submit" class="btn btn-default" id="order-submit">Place Order</button>
+          </form>
+
+
+
+        </div> <!-- end #order-row-column -->
       </div>
 
     </div> <!-- Container-fluid -->
