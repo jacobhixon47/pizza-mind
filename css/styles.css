@@ -19,15 +19,11 @@ body {
   margin: 0;
 }
 
-.navbar-default {
-  width: 100%;
-  padding: 0px;
-  height: 5vh;
-  border: none;
-  margin-bottom: 0;
+.nav {
+  width: 100vw;
 }
 
-#menu-list {
+#nav-list {
   background-color: #000000;
 }
 
@@ -40,7 +36,11 @@ body {
 .nav > li > a:hover {
   cursor: pointer;
   background-color: #1fc4ab;
-  color: #000000;
+  color: #ffffff;
+}
+
+#navbar-name {
+  border-bottom: 2px #000000 solid;
 }
 
 #navbar-name > a {
@@ -56,6 +56,10 @@ body {
 
 ul > .menu-buttons {
   float: right;
+}
+
+#deals-button {
+  margin-right: 5px;
 }
 
 #row-1 {
