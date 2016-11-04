@@ -15,7 +15,7 @@
         <nav class="navbar navbar-right navbar-fixed-top">
           <ul class="nav nav-pills" id="nav-list">
             <li id="navbar-name" role="presentation"><a href="index.html">PIZZAMIND</a></li>
-            <li class="nav-buttons menu-button" role="presentation"><a href="#" id="deals-button">Deals</a></li>
+            <li class="nav-buttons wings-button" role="presentation"><a href="#">Deals</a></li>
             <li class="nav-buttons menu-button" role="presentation"><a href="#">Menu</a></li>
             <li class="nav-buttons order-button" role="presentation"><a href="#">Order</a></li>
           </ul>
@@ -23,7 +23,8 @@
 
         <div class="row" id="row-1">
           <div class="col-md-12" id="row1-column">
-            <h1 class="order-button">Quench Your Hunger</h1>
+            <h1 class="quench-button">Quench Your Hunger</h1>
+            <h1 class="wings-button">See Deals</h1>
           </div>
         </div>
 
@@ -43,6 +44,7 @@
         <div class="col-md-12">
           <div id="row3-h1">
             <h1>New Boneless Wings</h1>
+            <h1>10 Wings - Only $5.00</h1>
             <h1 class="order-button">Order Now</h1>
           </div>
         </div>
@@ -53,36 +55,48 @@
           <h1>Order Selection</h1>
           <form id="order-form">
             <h1>Size</h1>
-            <ul>
-              <input type="radio" value="small">
-              <label>Small</label><br>
-              <input type="radio" value="medium">
-              <label>Medium</label><br>
-              <input type="radio" value="large">
-              <label>Large</label><br>
-            </ul>
+              <select>
+                <option value="small">Small: $7.00</option>
+                <option value="medium">Medium: $14.00</option>
+                <option value="large">Large: $21.00</option>
+            </select>
             <h1>Toppings</h1>
-            <ul>
-              <input type="checkbox" value="1">
+            <p>(+$1.00ea)</p><br>
+            <ul id="toppings-list">
+              <input type="checkbox" value="Pepperoni" name="1">
               <label>Pepperoni</label><br>
-              <input type="checkbox" value="1">
+              <input type="checkbox" value="Ham" name="1">
               <label>Ham</label><br>
-              <input type="checkbox" value="1">
+              <input type="checkbox" value="Olives" name="1">
               <label>Olives</label><br>
-              <input type="checkbox" value="1">
+              <input type="checkbox" value="Chicken" name="1">
               <label>Chicken</label><br>
-              <input type="checkbox" value="1">
+              <input type="checkbox" value="Peppers" name="1">
               <label>Peppers</label><br>
-              <input type="checkbox" value="1">
+              <input type="checkbox" value="Tomatoes" name="1">
               <label>Tomatoes</label><br>
             </ul>
+            <h1>Wings</h1>
+            <input type="checkbox" value="Wings">
+            <label>10pc Boneless Wings: $5.00</label><br><br>
 
             <button type="submit" class="btn btn-default" id="order-submit">Place Order</button>
           </form>
-
-
-
         </div> <!-- end #order-row-column -->
+      </div>
+
+      <div class="row" id="confirmation-row">
+        <h1>Thanks! Here are your order details</h1>
+        <h2>Size:</h2><br>
+        <span id="size"></span><br>
+        <h2>Toppings:</h2><br>
+        <span id="toppings"></span><br>
+        <h2>Total:</h2><br>
+        <span id="total"></span><br>
+        <div class="wings-div">
+
+        </div>
+
       </div>
 
     </div> <!-- Container-fluid -->

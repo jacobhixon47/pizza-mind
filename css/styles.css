@@ -135,9 +135,10 @@ ul > .nav-buttons {
 }
 
 #order-row {
+  display: none;
   background-color: #000000;
   color: #1fc4ab;
-  padding-top: 15vh;
+  padding-top: 5vh;
 }
 
 #order-row-column > h1 {
@@ -168,4 +169,25 @@ ul > .nav-buttons {
   width: 100%;
   border-radius: 0;
   border: none;
+}
+
+select {
+  background-color: #000000;
+  border-color: #1fc4ab;
+}
+
+#confirmation-row {
+  padding-top: 10vh;
+  display: none;
+  background-color: #000000;
+  color: #1fc4ab;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#confirmation-row > h1 {
+  background-color: #1fc4ab;
+  color: #000000;
+  border: 2px #1fc4ab solid;
+  padding: 2%;
 }
