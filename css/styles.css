@@ -1,0 +1,49 @@
+body {
+  background: url("../img/row1.jpeg") fixed;
+  background-size: cover;
+  color: #000000;
+}
+
+#main-container {
+  padding-left: 0px;
+}
+
+nav {
+  position: fixed;
+  background-color: rgb(0, 150, 250);
+  width: 100%;
+  border: 2px rgb(0, 150, 250) solid;
+}
+
+.nav-pills > li {
+  margin: 0px !important;
+  padding: 0px;
+  width: 25%;
+  text-align: center;
+  font-weight: bold;
+}
+
+#navbar-name {
+  font-size: 1.2em;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+}
+
+.nav-pills > li > a {
+  color: #ffffff;
+  border-radius: 0px;
+}
+
+.nav-pills > li > a:hover {
+  color: rgb(0, 150, 250);
+  background-color: #ffffff;
+}
+
+#row-1 {
+  background-color: rgba(245, 245, 245, 0.4);
+  padding: 5%;
+  text-align: center;
+}
