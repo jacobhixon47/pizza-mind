@@ -13,7 +13,7 @@ Pizza.prototype.cost = function() {
 // User Interface Logic //
 $(document).ready(function() {
   $("#nav-list").fadeIn(1500);
-  $(".row").fadeIn(1500);
+  $("#row-1, #row-2, #row-3").fadeIn(1500);
   $(".order-button").click(function(event) {
     event.preventDefault();
 
